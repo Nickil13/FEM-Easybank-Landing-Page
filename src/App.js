@@ -14,8 +14,8 @@ function App() {
             <header>
                 <Navbar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
                 {/* Hero */}
-                <div className="relative bg-intro-mobile bg-no-repeat w-full pt-[320px] bg-[center_top_-70px] mb-28">
-                    <div className="flex flex-col px-4">
+                <div className="relative bg-intro-mobile bg-no-repeat w-full pt-[320px] bg-[center_top_-65px] mb-20">
+                    <div className="container">
                         <div className="absolute -top-[122px] left-4 right-4 ">
                             <img
                                 className="w-full h-full object-cover"
@@ -24,31 +24,36 @@ function App() {
                             />
                         </div>
                         <div className="flex flex-col items-center justify-center text-center">
-                            <h1 className="text-[2.25rem] leading-tight mb-5">
+                            <h1 className="text-h1 leading-tight mb-4">
                                 Next generation digital banking
                             </h1>
-                            <p className="text-[1rem] mb-4">
+                            <p className="mb-8">
                                 Take your financial life online. Your Easybank
                                 account will be a one-stop-shop for spending,
                                 saving, budgeting, investing, and much more.
                             </p>
-                            <button>Request Invite</button>
+                            <button className="btn">Request Invite</button>
                         </div>
                     </div>
                 </div>
             </header>
             <main>
-                <section>
-                    <h2>Why choose Easybank?</h2>
-                    <p className="">
-                        We leverage Open Banking to turn your bank account into
-                        your financial hub. Control your finances like never
-                        before.
-                    </p>
-                    <div>
-                        {cardData.map((card, index) => {
-                            return <Card key={index} {...card} />;
-                        })}
+                <section className="text-center py-16 bg-neutral-light-grayish-blue">
+                    {/* flex flex-col items-center justify-center */}
+                    <div className="container flex-col">
+                        <h2 className="text-h2 leading-tight mb-4">
+                            Why choose Easybank?
+                        </h2>
+                        <p className="mb-16">
+                            We leverage Open Banking to turn your bank account
+                            into your financial hub. Control your finances like
+                            never before.
+                        </p>
+                        <div className="">
+                            {cardData.map((card, index) => {
+                                return <Card key={index} {...card} />;
+                            })}
+                        </div>
                     </div>
                 </section>
                 <section>

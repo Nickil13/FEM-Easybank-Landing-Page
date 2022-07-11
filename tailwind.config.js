@@ -18,7 +18,11 @@ module.exports = {
         },
         extend: {
             fontSize: {
+                "body-sm": "0.9375rem",
                 body: "1.125rem",
+                h3: "1.25rem",
+                h2: "2rem",
+                h1: "2.5rem",
             },
             height: {
                 nav: "65px",

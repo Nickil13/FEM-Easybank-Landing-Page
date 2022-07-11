@@ -6,8 +6,8 @@ import { navItems } from "../data";
 
 export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
     return (
-        <div className="fixed top-0 left-0 right-0 nav-wrapper bg-neutral-white shadow-md z-10">
-            <nav className="relative flex justify-between items-center w-[85%] mx-auto h-nav">
+        <nav className="fixed top-0 left-0 right-0 nav-wrapper bg-neutral-white shadow-md z-10 h-nav">
+            <div className="container relative  justify-between h-full">
                 <img src={logo} alt="logo" />
 
                 <ul className="hidden">
@@ -22,7 +22,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
                 ) : (
                     <MenuIcon onClick={() => setIsMenuOpen(true)} />
                 )}
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }

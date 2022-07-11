@@ -7,7 +7,7 @@
         font-family: "Public Sans", sans-serif;
     }
     body {
-        @apply mt-nav text-body;
+        @apply mt-nav text-body bg-neutral-very-light-gray;
     }
     h1,
     h2,
@@ -15,6 +15,15 @@
         @apply text-primary-dark-blue;
     }
     p {
-        @apply text-neutral-grayish-blue;
+        @apply text-neutral-grayish-blue leading-relaxed text-body-sm;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply text-neutral-white text-body-sm font-bold rounded-full bg-gradient-to-r from-primary-lime-green to-primary-bright-cyan py-3 w-[175px];
+    }
+    .container {
+        @apply w-[90%] mx-auto flex justify-center items-center;
     }
 }
