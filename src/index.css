@@ -6,4 +6,15 @@
     html {
         font-family: "Public Sans", sans-serif;
     }
+    body {
+        @apply mt-nav text-body;
+    }
+    h1,
+    h2,
+    h3 {
+        @apply text-primary-dark-blue;
+    }
+    p {
+        @apply text-neutral-grayish-blue;
+    }
 }

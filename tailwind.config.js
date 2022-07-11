@@ -5,6 +5,7 @@ module.exports = {
         colors: {
             primary: {
                 "dark-blue": "hsl(233, 26%, 24%)",
+                "overlay-blue": "hsla(233, 26%, 24%, 80%)",
                 "lime-green": "hsl(136, 65%, 51%)",
                 "bright-cyan": "hsl(192, 70%, 51%)",
             },
@@ -18,6 +19,15 @@ module.exports = {
         extend: {
             fontSize: {
                 body: "1.125rem",
+            },
+            height: {
+                nav: "65px",
+            },
+            margin: {
+                nav: "65px",
+            },
+            backgroundImage: {
+                "intro-mobile": "url(./images/bg-intro-mobile.svg)",
             },
         },
     },

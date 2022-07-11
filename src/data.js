@@ -8,7 +8,7 @@ import imageCurrency from "./images/image-currency.jpg";
 import imagePlane from "./images/image-plane.jpg";
 import imageConfetti from "./images/image-confetti.jpg";
 
-export const cardData = [
+const cardData = [
     {
         title: "Online Banking",
         content:
@@ -35,7 +35,7 @@ export const cardData = [
     },
 ];
 
-export const articleData = [
+const articleData = [
     {
         title: "Receive money in any currency with no fees",
         author: "Claire Robinson",
@@ -65,3 +65,6 @@ export const articleData = [
         image: imageConfetti,
     },
 ];
+
+const navItems = ["Home", "About", "Contact", "Blog", "Careers"];
+export { cardData, articleData, navItems };
